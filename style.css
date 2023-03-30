@@ -1,0 +1,226 @@
+:root{
+    --dark-color: #1A283F;
+    --light-color:#fff;
+    --green-color:#34D1CC;
+    --red-color:#FD4751;
+    --yellow-color:#FEC755;
+    
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* start navbar*/
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--light-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1.4px solid var(--green-color);
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: var(--light-color);
+    font-size: 20px;
+    border:2px solid var(--light-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    border:3px solid var(--green-color);
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border:3px solid var(--green-color);
+
+}
+.bondi-btn{
+    color: #FCBC56;
+    background-color: rgb(253,71,81);
+    padding: 6px 14px;
+}
+.bondi-btn:hover{
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+
+}
+/* end  navbar */
+
+
+/* start  Home*/
+.home{
+
+    background-color: var(--dark-color);
+    height: 500px;
+}
+
+.home .start h1{
+    color: var(--light-color);
+    
+}
+
+
+/* end  Home*/
+
+/*start Services  */
+
+.title::after{
+    content:'';
+    height: 2px;
+    width: 120px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.services .feat .double-icon{
+    height: 200px;
+}
+.services .feat .double-icon svg{
+    left: 50%;
+    transform: translatex(-50%);
+}
+.services .feat .double-icon .number{
+    font-size: 14rem;
+    color: #EFF7FA;
+}
+.services .feat .double-icon .icon{
+ color: var(--green-color);   
+ font-size: 5rem;
+}
+.services .feat h4{
+    color: var(--yellow-color);
+
+}
+.services .feat p{
+    color: #7F7F7F;
+}
+
+/* end Services */
+
+/* start work */
+.work{
+    background-color: #EFF7FA;
+}
+.work .active{
+    color: #FCBC56;
+    background-color: var(--red-color);
+    border-radius: 70%;
+}
+.work li {
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+.work li:not(.active):hover{
+    color: var(--red-color);
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+  }
+.work .box:hover::before {
+    transform: translateX(0);
+}
+.title1{
+    margin-bottom:100px ;
+}
+/* end work */
+/* start About */
+     /*  */
+/* end About */
+/* start our team  */
+.team{
+    background-color: #EFF7FA;
+}
+.team .h2{
+    color: var(--yellow-color);
+}
+.team h4{
+    background-color: var(--green-color);
+    padding: 13px 0 ;
+    color: var(--light-color);
+    font-weight: bold;
+}
+.projcet{
+    background-color: var(--dark-color);
+}
+/* end our team  */
+.sub{
+    background-color: var(--yellow-color);
+    
+}
+.sub input{
+    border: none;
+    border-bottom:  1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+.sub input:focus{
+    outline: none;
+}
+.sub input::placeholder{
+    color: white;
+}
+
+.sub .btt input{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* start footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .info .cope .gr{
+    color: var(--green-color);
+}
+footer .info .cope span {
+    color: var(--yellow-color);
+    
+}
+
+footer li{
+    list-style: none;
+    padding: 4px 0;
+}
+footer .iconss .f{
+    background-color: #1977F2;
+    color: #fff;
+}
+footer .iconss .t{
+    background-color: #1EA1F2;
+    color: #fff;
+}
+footer .iconss .i{
+    background-color: #0277B5;
+    color: #fff;
+}
+footer .iconss .y{
+    background-color: #FD4441;
+    color: #fff;
+}
+/* end footer */
